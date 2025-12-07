@@ -42,7 +42,7 @@ nav {
     height: 270px;
     margin: 25px auto;
     border: 2px solid white;
-    backdrop-filter: blur(58px);
+    backdrop-filter: blur(88px);
     border-radius: 100px;
     padding: 20px 0;
     box-sizing: border-box;
@@ -52,7 +52,7 @@ nav h1 {
     text-align: center;
     font-size: 45pt;
     font-family: "Clicker Script", cursive;
-    color: darkgoldenrod;
+    color: chocolate;
     margin: 20px 0 40px 0;
 }
 
@@ -78,7 +78,7 @@ nav a {
     font-family: "Rubik Scribble", system-ui;
     font-size: 25pt;
     text-decoration: none;
-    color: gold;
+    color: chocolate;
     transition: 0.5s;
     font-weight: 600;
 }

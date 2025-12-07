@@ -1,0 +1,261 @@
+/* Betűtípusok */
+
+.zen-loop-regular {
+  font-family: "Zen Loop", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rubik-scribble-regular {
+  font-family: "Rubik Scribble", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.clicker-script-regular {
+  font-family: "Clicker Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Body és egyéb */
+
+body {
+    background-image: url(https://image.fonwall.ru/o/hj/wallpaper-snow-hills-sky-clouds.jpeg?auto=compress&fit=crop&w=2560&h=1440&domain=img3.fonwall.ru);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 20px;
+    padding-left: 25px;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar - 12.05. 19:12 - Az működik a Navbar, de undorítóan néz ki a kód. */
+
+nav {
+    width: 950px;
+    height: 270px;
+    margin: 25px auto;
+    border: 2px solid white;
+    backdrop-filter: blur(58px);
+    border-radius: 100px;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+nav h1 {
+    text-align: center;
+    font-size: 45pt;
+    font-family: "Clicker Script", cursive;
+    color: darkgoldenrod;
+    margin: 20px 0 40px 0;
+}
+
+nav ul { /* Ez mind káosz. Valaki mentsen meg. */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* A W3Schools szerint ez egy jobb módja a grid-template-columns-nak. */
+    padding: 0;
+    margin: 0 40px;
+    list-style: none;
+    margin-top: 70px;
+}
+
+nav li {
+    text-align: center;
+    transition: transform 0.75s cubic-bezier(.25,.8,.25,1); /* Valamilyen macOS-szerű animáció, amit a Stack Overflow-on találtam */
+}
+
+nav li:hover {
+    transform: scale(1.10);
+}
+
+nav a {
+    font-family: "Rubik Scribble", system-ui;
+    font-size: 25pt;
+    text-decoration: none;
+    color: gold;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: black;
+}
+
+/* div */
+
+#index {
+    display: block;
+    margin: 0px auto;
+    border: 2px solid white;
+    width: 950px;
+    height: 900px;
+    border-radius: 24px;
+    backdrop-filter: blur(28px);
+}
+
+#index h1 {
+    font-family: "Zen Loop", cursive;
+    font-size: 48px;
+}
+
+#index ul {
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#index h1,
+#index p {
+    padding-left: 25px;
+    padding-right: 25px;
+} /* Ez a helyes syntax, ha ugyanabban a sorban írom, az egész dokumentumba veszi! Pl.: #content h1, h2 {} akkor az egész dokumentum H1 és H2-eire fogja alkalmazni. */
+
+#index p {
+    font-size: 18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#gallery {
+    display: block;
+    margin: 0px auto;
+    border: 2px solid white;
+    width: 950px;
+    height: 2300px;
+    border-radius: 24px;
+    backdrop-filter: blur(28px);
+}
+
+#gallery h1 {
+    font-family: "Zen Loop", cursive;
+    font-size: 48px;
+}
+
+#gallery h1,
+#gallery p {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#gallery p {
+    font-size: 18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#origin {
+    display: block;
+    margin: 0px auto;
+    border: 2px solid white;
+    width: 950px;
+    height: 2520px;
+    border-radius: 24px;
+    backdrop-filter: blur(28px);
+}
+
+#origin h1 {
+    font-family: "Zen Loop", cursive;
+    font-size: 48px;
+}
+
+#origin h1,
+#origin p {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#origin p {
+    font-size: 18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#source {
+    display: block;
+    margin: 0px auto;
+    border: 2px solid white;
+    width: 950px;
+    height: 700px;
+    border-radius: 24px;
+    backdrop-filter: blur(28px);
+}
+
+#source h1 {
+    font-family: "Zen Loop", cursive;
+    font-size: 48px;
+}
+
+#source h1,
+#source p {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#source p {
+    font-size: 18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Galéria */
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 612px;
+    border-radius: 30px;
+    backdrop-filter: blur(20px);
+    transform-origin: center; /* Középről kezdi az animációt, szebben néz ki szerintem */
+}
+
+#not-sizing-img img {
+    width: 750px;
+}
+
+.image-gallery:hover {
+    transform: scale(1.1);
+    transition: 0.75s;
+}
+
+.image-gallery:not(:hover) {
+    transform: scale(1);
+    transition: 0.75s;
+}
+
+.list a {
+    font-size: 25px;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Footer */
+
+footer {
+    display: grid;
+    flex-wrap: wrap;
+    height: 150px;
+    max-width: 950px;
+    border: 2px solid white;
+    text-align: center;
+    margin: 25px auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 32px;
+    backdrop-filter: blur(20px);
+}
+
+footer h1 {
+    padding-top: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+iframe {
+    margin-left: 90px;
+    margin-top: 25px;
+}

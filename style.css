@@ -78,13 +78,13 @@ nav a {
     font-family: "Rubik Scribble", system-ui;
     font-size: 25pt;
     text-decoration: none;
-    color: chocolate;
+    color: black;
     transition: 0.5s;
     font-weight: 600;
 }
 
 nav a:hover {
-    color: black;
+    color: darkorange;
 }
 
 /* div */
